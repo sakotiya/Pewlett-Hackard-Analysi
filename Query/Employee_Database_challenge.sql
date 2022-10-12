@@ -68,4 +68,28 @@ ORDER BY em.emp_no::INTEGER;
 select * from Mentorship_table
  
  
- 
+ -- Creating mentor_title_count table 
+ SELECT title,
+  	COUNT(title)
+  INTO mentor_title_count
+  FROM Mentorship_table
+  GROUP BY title;
+  
+  select * from mentor_title_count
+
+-- Creating comparision table data 
+ SELECT rc.title,
+  rc.total_number as retire_count,
+  	mc.count as mentoree_count
+  INTO comparison_data
+  FROM retiring_titles as rc
+  LEFT JOIN mentor_title_count as mc
+  ON (rc.title = mc.title)
+
+  
+  select * from comparison_data
+  drop table comparison_data
+  
+  SELECT title, mentoree_count, retire_count, 
+			ROUND(mentoree_count * 100.0 / retire_count, 1) AS Percent
+  FROM comparison_data;
