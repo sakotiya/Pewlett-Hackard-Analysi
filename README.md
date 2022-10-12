@@ -15,16 +15,16 @@ The six csvs are
 
 We started by creating an ERD diagram. this will let us flow chart or the blue print of the tables and how they are related via primary key and foreign keys. 
 
-![alt text](resources/ERD.png)
+![alt text](Resources/ERD.png)
 
 
 ## Results
 
 * Firstly we created the number of Retiring Employees by Title which contains the emp_no, first name , titles , from date and to_date of the employees whose birthdate is between 1952 to 1955. from the table it can be infered that high percentage of workforce could retire at given time.
 
-![alt text](resources/query1.png)
+![alt text](Resources/query1.png)
 
-![alt text](resources/table%20.png)
+![alt text](Resources/table%20.png)
 
 
 * Then some employees were having mutiple titles so we created table that contains the most recent title of each employee in the name of unique titles.
@@ -36,13 +36,13 @@ We started by creating an ERD diagram. this will let us flow chart or the blue p
 
 
 
-![alt text](resources/retiring_titles.png)
+![alt text](Resources/retiring_titles.png)
 
 * A query is written and executed to create a Mentorship Eligibility table for current employees who were born between January 1, 1965 and December 31, 1965.
 
-![alt text](resources/QUERY2.png)
+![alt text](Resources/QUERY2.png)
 
-![alt text](resources/table4.png)
+![alt text](Resources/table4.png)
 
 
 ## Summary
@@ -56,14 +56,14 @@ There are 72,458 positions eligible to be impacted by this upcoming retirement w
 Yes there are far enough qualified , retirement-ready employees in the departments to mentor next generation. this can be proof via table retirement_ready_employees.
 
 
-Using the code shown below, we can display a new table that shows the total count of retiring employees, employees eligible for the mentor program, and the percentage of mentor-eligible employees to retiring employees by title. there are at least 14 retirement-ready employees available to mentor every 1 employee, depending on the position. Some positions have over 50 retirement-ready employees for every 1 employee eligible for mentors
+Using the code shown below, we can display a new table that shows the total count of retiring employees, employees eligible for the mentor program, and the percentage of mentor-eligible employees to retiring employees by title. there are at least 14 retirement-ready employees available to mentor every 1 employee, depending on the position. Some positions have over 50 retirement-ready employees for every 1 employee eligible for mentors.
 
- ![alt text](resources/query4.png)
+ ![alt text](Resources/query4.png)
 
- ![alt text](resources/table6.png)
+ ![alt text](Resources/table6.png)
 
- ![alt text](resources/query3.png)
+ ![alt text](Resources/query3.png)
 
- ![alt text](resources/table5.png)
+ ![alt text](Resources/table5.png)
 
 
