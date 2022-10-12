@@ -163,3 +163,4 @@ LEFT JOIN dept_emp as de
 ON ce.emp_no = de.emp_no
 GROUP BY de.dept_no;
 
+select * from salaries;
